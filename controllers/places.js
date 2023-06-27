@@ -20,9 +20,16 @@ router.get('/', (req, res) => {
     res.render('places/index', {places})
   })
   
-module.exports = router
+
+// POST /places
+router.post ('/places', (req, res) => {
+    res.render('/places');
+}
+)
 
 // GET /places/new
 router.get('/new', (req, res) => {
     res.render('places/new')
   })
+
+  module.exports = router
